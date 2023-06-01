@@ -1,0 +1,18 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+rabbitmq_send_messages:
+    path: /send-message/{numberOfMessages}
+    controller: App/Controller/MessageController::createMessages
+    methods:  GET
+
+rabbitmq_get_messages:
+    path: /get-message/{queue}/{ack}
+    controller: App/Controller/MessageController::receiveMessages
+    methods: GET
+
+rabbitmq_get_quantity_messages:
+    path: /get-quantity-message/{queue}
+    controller: App/Controller/MessageController::quantityMessages
+    methods: GET

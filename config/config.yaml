@@ -1,0 +1,9 @@
+parameters:
+    RabbitMQ:
+        application_env: rabbitmq3
+        application_port: 5672
+        application_user: myuser
+        application_secret: mypassword
+        application_exchange: test-exchanges
+        application_queue: test-queue
+        application_rountingKey: test-second-queue

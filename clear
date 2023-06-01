@@ -1,0 +1,12 @@
+Symfony\Component\ErrorHandler\Error\FatalError {#4315
+  #message: "Error: Class Fiducial\AmcBundle\Security\AMCUserProvider contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (Fiducial\AmcBundle\Security\AMCUserProvider::loadUserByIdentifier)"
+  #code: 0
+  #file: "/home/denisbaptista/amc-security-layer/src/Fiducial/AmcBundle/Security/AMCUserProvider.php"
+  #line: 14
+  -error: array:4 [
+    "type" => 1
+    "message" => "Class Fiducial\AmcBundle\Security\AMCUserProvider contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (Fiducial\AmcBundle\Security\AMCUserProvider::loadUserByIdentifier)"
+    "file" => "/home/denisbaptista/amc-security-layer/src/Fiducial/AmcBundle/Security/AMCUserProvider.php"
+    "line" => 14
+  ]
+}

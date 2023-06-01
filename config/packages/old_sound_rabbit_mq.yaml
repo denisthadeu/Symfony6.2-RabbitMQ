@@ -1,0 +1,27 @@
+old_sound_rabbit_mq:
+    connections:
+        default:
+            url: '%env(RABBITMQ_URL)%'
+    producers:
+        messaging:
+            class: App\Rabbit\MessagingProducer
+            connection: default
+            exchange_options: { name: 'test-exchanges', type: direct }
+            default_routing_key: 'test-second-queue'
+        sending:
+            class: App\Rabbit\MessagingProducer
+            connection: default
+            exchange_options: { name: 'test-exchanges', type: direct }
+    consumers:
+        messaging:
+            connection: default
+            exchange_options: { name: 'test-exchanges', type: direct }
+            queue_options: { name: 'test-queue' }
+            callback: message_service
+            enable_logger: true
+        sending:
+            connection: default
+            exchange_options: { name: 'test-exchanges', type: direct }
+            queue_options: { name: 'test-second-queue' }
+            callback: message_service
+            enable_logger: true

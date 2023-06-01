@@ -1,0 +1,8 @@
+controllers:
+    resource: ../../src/Controller/
+    type: annotation
+
+#    resource: ../../vendor/amc/amc-security-layer/src/Fiducial/SystemBundle/Controller/
+#    resource: ../../vendor/amc/amc-security-layer/src/Controller/
+#    type: annotation
+
